@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Challenge</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            
+        }
+        body{
+            background-image: url("https://images.pexels.com/photos/33999/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+            background-size: cover;
+            background-repeat: no-repeat;
+            
+        }
+        .container{
+            width: 100%;
+            max-width: 462px;
+            margin: 120px 400px;
+        }
+        .box1{
+            background-color: #182225;
+            color: white;
+            font-size: 29px;
+            font-weight: bold;
+            padding: 30px 0px;
+            text-align: center;
+            border: 1px solid #182225;
+            border-radius: 8px;
+        }
+        .box2{
+            background-color: #24C2C2;
+            color: white;
+            padding: 10px 85px;
+            border: 1px solid #24C2C2;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea{
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 4px;
+            margin: 5px;
+        }
+        input[type=submit]{
+            background-color: #613fbe;
+            color: white;
+            font-size: 20px;
+            width: 100%;
+            padding: 12px;
+            cursor: pointer;
+            border: none;
+            border-radius: 4px;
+        }
+        input[type="submit"]:hover{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">Contact Us...!</div>
+        <div class="box2">
+            <form action="">
+                <p>Full Name: <br> <input type="text" name="full name" id="" placeholder="Full Name"></p>
+                <p>E-mail: <br> <input type="email" name="email" id="" placeholder="abcd@gmail.com"></p>
+                <p>Subject : <br> <input type="text" name="subject" id="" placeholder="Job Enquiry"></p>
+                <p>Message: <br> <textarea name="message" id="" cols="30" rows="6" placeholder="Message"></textarea></p>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Challenge 3</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            
+        }
+        html{
+            background-image:url(wallpaper1.png);
+            box-shadow:inset 0px 10px 100px 10px rgb(28, 151, 173);
+            background-size:cover;
+            background-repeat: no-repeat;
+        }
+        .container{
+            width: 100%;
+            max-width: 550px;
+            margin: 50px 300px;
+        }
+        .box1{
+            color: rgb(0,128,128);
+            background-color: #90EE90;
+            padding: 12px 15px;
+            font-size: 28px;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            border: 5px dashed rgb(0,128,0);
+            border-radius: 8px;
+        }
+        .box2{
+            background-color: #708090;
+            border: 5px dashed #F5DEB3;
+            border-radius: 8px;
+            padding: 20px 10px 8px;
+            font-weight: bold;
+        }
+        input[name="name"],
+        input[name="role"],
+        input[name="email"],
+        input[name="dob"],
+        textarea{
+            width: 100%;
+        }
+        input[type="submit"]{
+            background-color: #2DA35D;
+            font-size: 24px;
+            padding: 8px 30px;
+            margin-left: 150px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="reset"]{
+            background-color: #B9631C;
+            font-size: 24px;
+            padding: 8px 30px;
+            margin-left: 100px;
+            margin-right: 10px;
+            border: none;
+            border-radius: 4px;
+        }
+        input[type="submit"]:hover,input[type="reset"]:hover{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">Contact Form</div>
+        <div class="box2">
+            <form action="">
+                <fieldset>
+                    <legend>1.NAME:-</legend>
+                    <input type="text" name="name" id="" placeholder="your name">
+                </fieldset><hr>
+                <fieldset>
+                    <legend>2.ROLE:-</legend>
+                    <input type="text" name="role" id="" placeholder="your role">
+                </fieldset><hr>
+                <fieldset>
+                    <legend>3.E-MAIL:</legend>
+                    <input type="email" name="email" id="" placeholder="your mail">
+                </fieldset><hr>
+                <fieldset>
+                    <legend>4.DATE OF BIRTH:-</legend>
+                    <input type="date" name="dob" id="">
+                </fieldset><hr>
+                <fieldset>
+                    <legend>5. SUBJECT:-</legend>
+                    <input type="text" name="subject" id="" placeholder="job inquiry">
+                </fieldset><hr>
+                <fieldset>
+                    <legend>6. LANGUAGE:-</legend>
+                    C <input type="radio" name="language" id="">
+                    C++ <input type="radio" name="language" id="">
+                    JAVA <input type="radio" name="language" id="">
+                    PYTHON <input type="radio" name="language" id="">
+                </fieldset><hr>
+                <fieldset>
+                    <legend>7. MESSAGE:-</legend>
+                    <textarea name="message" id="" cols="30" rows="10"></textarea>
+                </fieldset><hr>
+                <fieldset>
+                    <legend>8. HAVE YOU WORKED IN ANOTHER COMPANY</legend>
+                    <select name="experience" id="">
+                        <option value="">--select--</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </fieldset><hr>
+                <input type="submit" value="Send">
+                <input type="reset" value="Reset">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

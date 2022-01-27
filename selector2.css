@@ -1,0 +1,27 @@
+/* Attribute Selector 
+
+li[class]{
+    font-size: 300%;
+}
+
+*/
+
+/* Attribute Selector with value where particular class is used exclusively 
+
+li[class="a"]{
+    color: royalblue;
+}
+
+*/
+
+/* Attribute Selector with value where particular class is used as inclusively */
+
+li[class ~="a"]{
+    color: darkred;
+}
+
+/* Everything Selector*/
+
+*{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

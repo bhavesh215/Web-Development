@@ -1,0 +1,36 @@
+/*Type Selector*/
+p,a{
+    color: blue;
+}
+/*Class Selector*/
+/*.special{
+    color: purple;
+    font-weight: bold;
+}*/
+/*Element Class Selector*/
+span.special,li.special{
+    color: orange;
+    font-weight: bolder;
+}
+/*Descendant Combinator*/
+li em{
+    color: rebeccapurple;
+}
+/*Adjacent Selector*/
+h1+p{
+    font-size: 200%;
+}
+/*Pseudo Class Selector*/
+a:hover{
+    color: red;
+    text-decoration: none;
+}
+/* Psudo Element Selector*/
+p::first-line{
+    color: yellow;
+}
+/*Id Selector*/
+#heading{
+    color: red;
+    background-color: black;
+}

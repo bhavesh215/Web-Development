@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Challenge 1</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0 auto;
+            width: 100%;
+            max-width: 800px;
+        }
+        .container{
+            margin: 20px 20px 15px 20px;
+        }
+        .box1{
+            background-color: #a6c36e;
+            color: white;
+            padding: 10px 30px;
+            border: none;
+            border-radius: 5px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 15px 0 0 0;
+        }
+        .box1 p::first-line{
+            font-size: 30px;
+        }
+        .box2{
+            background-color: #f2f2f2;
+            border: none;
+            border-radius: 5px;
+            padding: 12px 20px;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea,
+        select{
+            width: 100%;
+            border: 1px solid lightgrey;
+            padding: 6px 10px;
+        }
+        input[type="submit"]{
+            background-color: #6b7d45;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            cursor: grab;
+            border-radius: 5px;
+        }
+        input[type="submit"]:hover{
+            background-color: #a6c36e;
+        }
+    </style>
+</head>
+<body>
+    <div class="contaiiner">
+        <div class="box1">
+            <p>Contact Form <br>Please fill all the texts in the fields</p>
+        </div>
+        <div class="box2">
+            <form action="">
+                <p>Your Name : <br> <input type="text" name="your name" id="" placeholder="Your Full Name"></p>
+                <p>Your Email : <br> <input type="email" name="email" id="" placeholder="Valid Email Address"></p>
+                <p>Message : <br> <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message to Us"></textarea></p>
+                <p>Subject : <br> <select name="subject" id="">
+                    <option value="Job Inquiry">Job Inquiry</option>
+                    <option value="Complain Filling">Complain Filling</option>
+                </select></p>
+                <input type="submit" value="Send">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

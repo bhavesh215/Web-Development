@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0 0px 0px 0;
+    font-size: 20px;
+    font-family: cursive;
+    font-weight: bold;
+    font-style: italic;
+    border: 5px solid darkblue;
+    width: 50%;
+}
+.flex-container{
+    display: flex;
+    flex-flow: row wrap;
+    height: 400px;
+    align-items:flex-start;
+    
+}
+/* Difference between align-content and align-items 
+    align items me blocks ke bich me space aa skta hai like agr 10 blocks hai to 5 first row me phir uske niche thoda space phir hogi second row 
+    align items me blocks ke bich me space nhi hogi woh as a ek unit hi treat honge like agr 10 blocks hai to 5 first row me phir uske just niche (bina space)  phir hogi second row 
+
+/* Important Note
+    align-content/align-items/align-self : Ye teeno properties flexbox ki cross axis mtlb flex direction ke perpendicular wali axis me kaam kregi 
+    justify-content/justify-items/justify-self : Ye teeno properties flexbox ki main axis mtlb flex direction  wali axis me kaam kregi */
+.flex-item{
+    width: 120px;
+    height: 120px;
+    border: 2px solid lightgrey;
+    padding: 12px 0;
+    text-align: center;
+}
+#flex-item1{
+    background-color: aqua;
+    align-self: stretch;
+}
+#flex-item2{
+    background-color:blue;
+}
+#flex-item3{
+    background-color: blueviolet;
+}
+#flex-item4{
+    background-color: coral;
+}
+#flex-item5{
+    background-color: hotpink;
+}
+#flex-item6{
+    background-color:cornflowerblue;
+}
+#flex-item7{
+    background-color:crimson;
+}
+#flex-item8{
+    background-color:darkblue;
+}
+#flex-item9{
+    background-color:darkcyan;
+}
+#flex-item10{
+    background-color:darkgreen;
+}

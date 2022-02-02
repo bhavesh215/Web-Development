@@ -1,0 +1,33 @@
+html{
+    font-size: 1em;
+}
+/*@media screen and (max-width:600px) {
+    body{
+        color: lightgreen;
+    }
+}*/
+
+/*@media (orientation: landscape) {
+    body{
+        color: purple;
+    }
+}*/
+
+/*@media screen and (max-width: 600px) and (orientation: landscape) {
+    body{
+        color: blue;
+    }
+}*/
+
+/*@media screen and (max-width:600px),
+screen and (orientation: landscape) {
+    body{
+        color: pink;
+    }
+}*/
+
+@media not all and (orientation:landscape){
+    body{
+        color: orange;
+    }
+}

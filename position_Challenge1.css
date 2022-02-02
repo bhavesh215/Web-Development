@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: darkmagenta;
+    text-align: center;
+    padding: 30px;
+    font-size: 30px;
+    font-weight: bold;
+}
+nav{
+    background-color: black;
+    overflow: hidden;
+    margin-bottom: 40px;
+    position: sticky;
+    width: 100%;
+    top: 0;
+}
+nav a{
+    text-decoration: none;
+    padding: 15px;
+    margin: 10px;
+    float: left;
+}
+h2{
+    margin: 12px;
+}
+

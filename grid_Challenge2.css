@@ -8,6 +8,7 @@
     grid-template-columns: repeat(3,1fr);
     grid-gap: 10px;
     height: 100vh;
+    margin-top: 7px;
 }
 .items{
     background-color: #FAD84B;
@@ -16,7 +17,7 @@
 #item-1{
     grid-row-start: 1;
     grid-row-end: 9;
-    height: 100vh;
+    height: 103vh;
 }
 #item-2{
     grid-row-start: 1;
@@ -30,14 +31,14 @@
     grid-row-end: 7;
     grid-column-start: 2;
     grid-column-end: 3;
-    height: 40vh;
+    height: 60vh;
 }
 #item-4{
     grid-row-start: 3;
     grid-row-end: 7;
     grid-column-start: 3;
     grid-column-end: 4;
-    height: 40vh;
+    height: 60vh;
 }
 #item-5{
     grid-row-start: 7;

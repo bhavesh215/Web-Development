@@ -1,0 +1,13 @@
+button{
+    margin: 15px;
+    padding: 16px;
+    text-align: center;
+    background-color: darkblue;
+    font-family: cursive;
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}

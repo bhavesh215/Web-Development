@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+</head>
+<body>
+    <script>
+        var n1=prompt("Enter your first number");
+        var op=prompt("Enter the operator");
+        var n2=prompt("Enter your second number");
+        switch(op){
+            case '+':
+                alert(n1+n2);
+                break;
+            case '-':
+                alert(n1-n2);
+                break;
+            case '*':
+                alert(n1*n2);
+                break;
+            case '/':
+                alert(n1/n2);
+                break;
+            case 'remainder':
+                alert(n1%n2);
+                break;
+            case 'power':
+                alert(n1**n2);
+                break;
+            default:
+                alert('I am still learning more');
+        }
+    </script>
+</body>
+</html>

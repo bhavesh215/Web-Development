@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions in JS</title>
+</head>
+<body>
+    <script>
+        function fibon(n){
+            var t1=0,t2=1,tn;
+            for(var i=1;i<n;i++){
+                tn=t1+t2;
+                t1=t2;
+                t2=tn;
+            }
+            console.log(t1);
+        }
+        var n=prompt('Enter number');
+        fibon(n);
+    </script>
+</body>
+</html>

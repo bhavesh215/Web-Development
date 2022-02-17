@@ -34,3 +34,10 @@ course.enroll()
 3. Factory wale way me function call krte waqt normal call hoga jbki constructor function me function call me new keyword ka use hoga
 
 */
+
+// Use of Delete Keyword
+/* Delete keyword se kisi object ki property ko delete kr skte hai */
+
+console.log(course);
+delete course.price;
+console.log(course);

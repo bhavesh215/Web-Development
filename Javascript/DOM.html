@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+</head>
+<body>
+    <ul>
+        <li>First Element</li>
+        <li>Second element</li>
+        <li>Third Element</li>
+    </ul>
+    <table>
+        <tr>
+            <td>One</td>
+            <td>Two</td>
+        </tr>
+        <tr>
+            <td>Three</td>
+            <td>Four</td>
+        </tr>
+    </table>
+    <script>
+        /*
+
+        // Root Node
+        console.log(document.documentElement);
+        console.log(document.body);
+        console.log(document.head);
+
+        // Childrens
+        console.log(document.body.childNodes);
+        console.log(document.body.children);
+        console.log(document.body.firstElementChild);
+        console.log(document.body.lastElementChild);
+
+        */
+
+        //Siblings
+        //const ulTag=document.body.children[0];
+        //const firstLi = ulTag.children[0];
+        //const thirdLi = ulTag.children[2];
+        //console.log(firstLi.nextElementSibling);
+        //console.log(thirdLi.previousElementSibling);
+
+        //Table DOM Manipulation
+        const tableTag=document.body.children[1];
+        console.log(tableTag);
+        console.log(tableTag.tBodies[0].rows[1].cells[0]);
+    </script>
+</body>
+</html>

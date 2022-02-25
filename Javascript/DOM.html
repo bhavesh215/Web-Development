@@ -6,49 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM Manipulation</title>
 </head>
-<body>
-    <ul>
-        <li>First Element</li>
-        <li>Second element</li>
-        <li>Third Element</li>
+<body id="body">
+    <ul id="element" data="valid">
+        <li class="List-item">first</li>
+        <li class="List-item">second</li>
+        <li class="List-item">third</li>
+        <li class="List-item">fourth</li>
     </ul>
+    
     <table>
         <tr>
-            <td>One</td>
-            <td>Two</td>
+            <td>first Element &nbsp;&nbsp;</td>
+            <td>second Element&nbsp;&nbsp;</td>
         </tr>
         <tr>
-            <td>Three</td>
-            <td>Four</td>
+            <td>third Element&nbsp;&nbsp;</td>
+            <td>fourth Element&nbsp;&nbsp;</td>
         </tr>
     </table>
     <script>
-        /*
-
+        
         // Root Node
         console.log(document.documentElement);
-        console.log(document.body);
         console.log(document.head);
+        console.log(document.body);
 
         // Childrens
         console.log(document.body.childNodes);
         console.log(document.body.children);
+        console.log(document.body.firstChild);
+        console.log(document.body.lastChild);
         console.log(document.body.firstElementChild);
         console.log(document.body.lastElementChild);
 
-        */
-
-        //Siblings
-        //const ulTag=document.body.children[0];
-        //const firstLi = ulTag.children[0];
-        //const thirdLi = ulTag.children[2];
-        //console.log(firstLi.nextElementSibling);
-        //console.log(thirdLi.previousElementSibling);
+        // Siblings 
+        const ulTag = document.body.children[0];
+        const fili=ulTag.children[0];
+        const foli=ulTag.children[3];
+        console.log(fili.nextElementSibling.textContent);
+        console.log(foli.previousElementSibling.textContent);
 
         //Table DOM Manipulation
-        const tableTag=document.body.children[1];
+        const tableTag = document.body.children[1];
         console.log(tableTag);
-        console.log(tableTag.tBodies[0].rows[1].cells[0]);
+        console.log(tableTag.rows);
+        console.log(tableTag.tBodies[0]);
+        console.log(tableTag.tBodies[0].rows[0]);
+        console.log(tableTag.tBodies[0].rows[0].cells[0].textContent);
+        console.log(tableTag.tBodies[0].rows[0].cells[1].textContent);
+        console.log(tableTag.tBodies[0].rows[1].cells[0].textContent);
+        console.log(tableTag.tBodies[0].rows[1].cells[1].textContent);
+        console.log(tableTag.tBodies[0].rows[1].cells[1].style = "color:#f0f0f0; background-color: yellow"); 
     </script>
 </body>
 </html>

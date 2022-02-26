@@ -13,7 +13,12 @@
         <li class="List-item">third</li>
         <li class="List-item">fourth</li>
     </ul>
-    
+    <div id="firstDiv" class="allDivs">First Div</div>
+    <!--<script>
+        const allDivs = document.querySelectorAll("allDivs");
+        console.log(allDivs);
+    </script>-->
+    <div id="secondDiv" class="allDivs">Second Div</div>
     <table>
         <tr>
             <td>first Element &nbsp;&nbsp;</td>
@@ -25,7 +30,7 @@
         </tr>
     </table>
     <script>
-        
+        /*
         // Root Node
         console.log(document.documentElement);
         console.log(document.head);
@@ -57,6 +62,40 @@
         console.log(tableTag.tBodies[0].rows[1].cells[0].textContent);
         console.log(tableTag.tBodies[0].rows[1].cells[1].textContent);
         console.log(tableTag.tBodies[0].rows[1].cells[1].style = "color:#f0f0f0; background-color: yellow"); 
+
+        // ID search
+        console.log(element);
+        console.log(element.style.background = "green"); 
+
+        const ulTag2 = document.getElementById('element');
+        console.log(ulTag2.style.color="hotpink");  
+
+       listItem =document.getElementsByClassName("List-item");
+       console.log(listItem);
+       console.log(document.getElementsByName('ul'))
+       console.log(document.getElementsByTagName('table'))
+
+       // Query Selector
+       console.log(document.querySelector(".List-item"))
+       // console.log(document.querySelectorAll(".List-item"));
+       const liItem=document.querySelectorAll("ul>li:last-child");
+       console.log(liItem[0].textContent); 
+       console.log(allDivs)*/
+
+       // Attributes
+       console.log(element.getAttribute('data'));
+       console.log(element.setAttribute('order-placed','pending'));
+       console.log(element.removeAttribute('order-placed'));
+       console.log(element.hasAttribute('order-placed'));
+       console.log(element.attributes)
+
+       // Creating and Removing the node elements
+       const newDiv = document.createElement('div')
+       const newText=document.createTextNode('Final Element')
+       newDiv.appendChild(newText);
+       // body.append(newDiv);
+       // body.prepend(newDiv);
+       secondDiv.replaceWith(newDiv)
     </script>
 </body>
 </html>

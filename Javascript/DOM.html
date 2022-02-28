@@ -7,18 +7,19 @@
     <title>DOM Manipulation</title>
 </head>
 <body id="body">
-    <ul id="element" data="valid">
+    <!--<ul id="element" data="valid">
         <li class="List-item">first</li>
         <li class="List-item">second</li>
         <li class="List-item">third</li>
         <li class="List-item">fourth</li>
-    </ul>
+    </ul>-->
     <div id="firstDiv" class="allDivs">First Div</div>
+    <button id="clickbtn" onclick="alert('Hello User')">Click Me</button>
     <!--<script>
         const allDivs = document.querySelectorAll("allDivs");
         console.log(allDivs);
     </script>-->
-    <div id="secondDiv" class="allDivs">Second Div</div>
+    <!--<div id="secondDiv" class="allDivs">Second Div</div>
     <table>
         <tr>
             <td>first Element &nbsp;&nbsp;</td>
@@ -28,7 +29,7 @@
             <td>third Element&nbsp;&nbsp;</td>
             <td>fourth Element&nbsp;&nbsp;</td>
         </tr>
-    </table>
+    </table>-->
     <script>
         /*
         // Root Node
@@ -83,19 +84,31 @@
        console.log(allDivs)*/
 
        // Attributes
-       console.log(element.getAttribute('data'));
-       console.log(element.setAttribute('order-placed','pending'));
-       console.log(element.removeAttribute('order-placed'));
-       console.log(element.hasAttribute('order-placed'));
-       console.log(element.attributes)
+       //console.log(element.getAttribute('data'));
+       //console.log(element.setAttribute('order-placed','pending'));
+       //console.log(element.removeAttribute('order-placed'));
+       //console.log(element.hasAttribute('order-placed'));
+       //console.log(element.attributes)
 
        // Creating and Removing the node elements
-       const newDiv = document.createElement('div')
+       /* const newDiv = document.createElement('div')
        const newText=document.createTextNode('Final Element')
        newDiv.appendChild(newText);
        // body.append(newDiv);
        // body.prepend(newDiv);
-       secondDiv.replaceWith(newDiv)
+       secondDiv.replaceWith(newDiv)*/
+       function callme(){
+           alert("Thanks for watching");
+       }
+       clickbtn.onclick=callme;
+       clickbtn.onclick=function(){
+           alert('Thank');
+       }
+       clickbtn.addEventListener('click',callme);
+
+
+       // Important Important Important 
+       // Event LIstener add kre waqt hame usme function ko pass krwana pdta hai na ki call 
     </script>
 </body>
 </html>
